@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>	
+    <title>Banglore Home Price Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="static/assets/js/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="static/assets/css/app.css" />
+
+</head>
+<body>
+	<div class="img"></div>
+	<a href="/">Home <i class="fa fa-arrow-right"></i></a>
+
+	<form class="form"action="/predict_home_price" method="POST">
+		<h2 style="font-family:verdana">Banglore Home Price Prediction</h2>
+		<h2 style="font-family:verdana">Area (Square Feet)</h2>
+		<input class="area"  type="text" name="total_sqft" id="total_sqft" placeholder="1000" required="required">
+		
+		<h2 style="font-family:verdana">BHK</h2>
+
+		<select class="location" name="bhk" id="bhk" required="required">
+			<option value="None" disabled="disabled" selected="disabled">Rooms</option>
+			<option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+		</select>
+		<h2 style="font-family:verdana">Bath</h2>
+
+		<select class="location" name="bath" id="bath" required="required">
+			<option value="None" disabled="disabled" selected="disabled">Bath</option>
+			<option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+		</select>
+
+
+		<h2 style="font-family:verdana">Location</h2>
+		<div>
+	  <select class="location" id="uiLocations" name="location" required="required">
+		<option value="" disabled="disabled" selected="disabled">Choose a Location</option>
+			<option>Electronic City</option>
+			<option>Rajaji Nagar</option>
+	  </select>
+	</div>
+	<button id="submit" class="submit"  type="submit">Estimate Price</button>
+	</form>
+
+	</body>
+</html>

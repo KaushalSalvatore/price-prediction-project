@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="static/assets/css/app.css" />
+	</head>
+
+<body>
+<a href="/">Home <i class="fa fa-arrow-right"></i></a>
+
+<div class="img"></div>
+
+<form class="form" action="{{ url_for('mobile.predict') }}" method="POST">
+	<h2 style="font-family:verdana">📱 Mobile Price Score Predictor</h2>
+	<h2 style="font-family:verdana">Battery Power 🔋 (mAh)</h2>
+		<input class="area" type="text" name="Battery" placeholder="mAh" required>
+
+	<h2 style="font-family:verdana">Front-Cam Megapixel 🤳</h2>
+		<input class="area" type="text" name="cam" placeholder="pixel" required>
+
+	<h2 style="font-family:verdana">Internal Memory 🤖 (GB)</h2>
+		<input class="area" type="text" name="memory" placeholder="mAh" required>
+
+	<h2 style="font-family:verdana">Mobile weight 🏋️</h2>
+		<input class="area" type="text" name="mwt" placeholder="Gram" required>
+
+	<h2 style="font-family:verdana">Pixel Resolution Height 📱</h2>
+		<input class="area" type="text" name="prh" placeholder="cm" required>
+
+	<h2 style="font-family:verdana">Pixel Resolution Width 📱</h2>
+		<input class="area" type="text" name="prw" placeholder="cm" required>
+
+	<h2 style="font-family:verdana">RAM 💽</h2>
+		<input class="area" type="text" name="ram" placeholder="GB" required>
+
+	<h2 style="font-family:verdana">Screen Height 🎦 (cm)</h2>
+		<input class="area" type="text" name="sh" placeholder="cm" required>
+
+	<h2 style="font-family:verdana">Screen Width 🎦 (cm) 💽</h2>
+		<input class="area" type="text" name="sw" placeholder="cm" required>
+
+	<h2 style="font-family:verdana">Talk Time 🗣️</h2>
+		<input class="area" type="text" name="tt" placeholder="hours" required>
+<!-- 
+	<button class="submit"  type="button">Estimate Price</button> -->
+
+	<button id="submit" class="submit"  type="submit">Estimate Price</button>
+
+	</form>
+</body>
+</html>

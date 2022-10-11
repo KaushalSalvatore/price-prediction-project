@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="static/assets/css/app.css" />
+	</head>
+
+<body>
+	<a href="/">Home <i class="fa fa-arrow-right"></i></a>
+
+<div class="img"></div>
+<form class="form" action="/laptoppricepredict" method="POST">
+	<h2 style="font-family:verdana">Laptop Price Predictor</h2>
+	<h2 style="font-family:verdana">Screen Size</h2>
+		<input class="area" type="text", name='screenSize' placeholder="(Inches)" required>
+
+		<h2 style="font-family:verdana">Weight</h2>
+		<input class="area" type="text", name='Weight' placeholder="(in kg)" required>
+
+
+		<h2 style="font-family:verdana">Screen Resolution</h2>
+		<select class="location" name="ScreenRes">
+			<option value="" disabled="disabled" selected="selected">Screen Resolution</option>
+			<option value= 1>1366 x 768</option>
+			<option value= 2>1440 x 900</option>
+			<option value= 3>1600 x 900</option>
+			<option value= 4>1920 x 1080</option>
+			<option value= 5>1920 x 1200</option>
+			<option value= 6>2160 x 1440</option>
+			<option value= 7>2304 x 1440</option>
+			<option value= 8>2256 x 1504</option>
+			<option value= 9>2560 x 1440</option>
+			<option value= 10>2400 x 1600</option>
+			<option value= 11>2560 x 1600</option>
+			<option value= 12>2880 x 1800</option>
+			<option value= 13>3200 x 1800</option>
+			<option value= 14>3840 x 2160</option>
+		  </select>
+
+		  <h2 style="font-family:verdana">CPU</h2>
+		  <select class="location" name="CPU">
+			<option value="" disabled="disabled" selected="selected">CPU</option>
+			<option value= 0>AMD A10</option>
+            	<option value= 1>AMD A12</option>
+                <option value= 2>AMD A4</option>
+                <option value= 3>AMD A6</option>
+                <option value= 4>AMD A8</option>
+                <option value= 5>AMD A9</option>
+                <option value= 6>AMD E Series</option>
+                <option value= 7>AMD FX Series</option>
+                <option value= 8>AMD Ryzen </option>
+                <option value= 9>Intel Atom </option>
+				<option value= 10>Intel Celeron</option>
+				<option value= 11>Intel M Series</option>
+				<option value= 12>Intel Pentium</option>
+				<option value= 13>Intel Xeon</option>
+				<option value= 14>Intel Core i3</option>
+				<option value= 15>Intel Core i5</option>
+				<option value= 16>Intel Core i7</option>
+				<option value= 17>Samsung ARM</option>
+		  </select>
+
+		  <h2 style="font-family:verdana">RAM</h2>
+
+		  <select class="location" name="RAM">
+			<option value="" disabled="disabled" selected="selected">RAM</option>
+				<option value= 2>2GB</option>
+				<option value= 4>4GB</option>
+				<option value= 6>6GB</option>
+				<option value= 8>8GB</option>
+				<option value= 12>12GB</option>
+				<option value= 16>16GB</option>
+				<option value= 24>24GB</option>
+				<option value= 32>32GB</option>
+				<option value= 64>64GB</option>
+		  </select>
+
+		  <h2 style="font-family:verdana">TOuch Screen</h2>
+		<select class="location" name="Touchscreen">
+			<option value="" disabled="disabled" selected="selected">Touch Screen</option>
+				<option value=1>Yes</option>
+				<option value=0>No</option>
+				
+		  </select>
+
+		  <h2 style="font-family:verdana">HDD</h2>
+
+		  <select class="location" name="HDD">
+			<option value="" disabled="disabled" selected="selected">HDD</option>
+				<option value= 0>0GB</option>
+				<option value= 32>32GB</option>
+				<option value= 128>128GB</option>
+				<option value= 500>500GB</option>
+				<option value= 1000>1TB</option>
+				<option value= 2000>2TB</option>
+				
+		  </select>
+
+		  <h2 style="font-family:verdana">SSD</h2>
+
+		  <select class="location" name="SSD">
+			<option value="" disabled="disabled" selected="selected">SSD</option>
+				<option value= 0>0GB</option>
+				<option value= 8>8GB</option>
+				<option value= 16>16GB</option>
+				<option value= 32>32GB</option>
+				<option value= 64>64GB</option>
+				<option value= 128>128GB</option>
+				<option value= 180>180GB</option>
+				<option value= 240>240GB</option>
+				<option value= 256>256GB</option>
+				<option value= 512>512GB</option>
+				<option value= 768>768GB</option>
+				<option value= 1000>1TB</option>
+				
+		  </select>
+
+		  <h2 style="font-family:verdana">SSHD</h2>
+
+
+		  <select class="location" name="SSHD">
+			<option value="" disabled="disabled" selected="selected">SSHD</option>
+				<option value= 0>0GB</option>
+				<option value= 508>508GB</option>
+				<option value= 1000>1TB</option>
+				
+		  </select>
+
+		  <h2 style="font-family:verdana">Flash Storage</h2>
+
+		  <select class="location" name="fStorage">
+			<option value="" disabled="disabled" selected="selected">Flash Storage</option>
+				<option value= 0>0GB</option>
+				<option value= 16>16GB</option>
+				<option value= 32>32GB</option>
+				<option value= 64>64GB</option>
+				<option value= 128>128GB</option>
+				<option value= 256>256GB</option>
+				<option value= 512>512GB</option>
+				
+		  </select>
+
+		  <h2 style="font-family:verdana">Laptop Type</h2>
+
+		  <select class="location" name="Type">
+			<option value="" disabled="disabled" selected="selected">Laptop Type</option>
+				<option value= 0>2 in 1 Convertible</option>
+				<option value= 1>Gaming</option>
+				<option value= 2>Netbook</option>
+				<option value= 3>Notebook</option>
+				<option value= 4>Ultrabook</option>
+				<option value= 5>Workstation</option>				
+		  </select>
+
+		  <h2 style="font-family:verdana">Operating System</h2>
+		  <select class="location" name="Os">
+			<option value="" disabled="disabled" selected="selected">Operating System</option>
+				<option value= 4>No Os</option>
+				<option value= 0>Android</option>
+				<option value= 1>Chrome OS</option>
+				<option value= 2>Linux</option>
+				<option value= 3>Mac OS X</option>
+				<option value= 8>macOS</option>
+				<option value= 5>Windows 10</option>
+				<option value= 6>Windows 10 S</option>
+				<option value= 7>Windows 7</option>				
+		  </select>
+		  <button id="submit" class="submit"  type="submit">Estimate Price</button>
+
+	</form>
+</body>
+</html>

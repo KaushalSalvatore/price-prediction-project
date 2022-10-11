@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="static/assets/css/app.css" />
+	</head>
+
+<body>
+	<a href="/">Home <i class="fa fa-arrow-right"></i></a>
+
+<div class="img"></div>
+<form class="form" action="/insurnceprediction" method="POST">
+	<h2>Medical Insurance Cost Predicter</h2>
+	<h2>Age</h2>
+		<input class="area" type="text" name='age' placeholder="in year" required>
+
+		<h2>Body Mass Index</h2>
+		<input class="area" type="text" name="bmi" placeholder="bmi" required="required">
+
+		<h3>Number of Childrens</h3>
+		<input class ="area" type="text"  name="children" placeholder="0, 1, 2, 3, 4, 5" required="required">
+
+
+
+		<select class="location" name="sex">
+			<option value="None" disabled="disabled" selected="selected">Sex</option>
+			<option value="sex_male">Male</option>
+			<option value="sex_female">Female</option>
+		  </select>
+
+
+		  <select class="location" name="smoker">
+			<option value="None" disabled="disabled" selected="selected">Smoker</option>
+			<option value="smoker_yes">Yes</option>
+			<option value="smoker_no">No</option>
+		  </select>
+
+		  <select class="location" name="region">
+			<option value="None" disabled="disabled" selected="selected">Region</option>
+				<option value="region_northwest">North-West</option>
+                <option value="region_southeast">South-East</option>
+                <option value="region_southwest">South-West</option>
+                <option value="region_northeast">North-East</option>
+		  </select>
+
+		  
+
+		
+		  <button id="submit" class="submit"  type="submit">Estimate Price</button>
+
+	</form>
+</body>
+</html>
