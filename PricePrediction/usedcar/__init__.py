@@ -4,7 +4,7 @@ import pickle
 
 usedcar_blueprint = Blueprint('usedcar', __name__)
 
-model = open('PricePrediction/usedcar/artifacts/car.pkl','rb')
+model = open('./PricePrediction/usedcar/artifacts/car.pkl','rb')
 regressor = pickle.load(model)
 
 
