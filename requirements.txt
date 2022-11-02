@@ -50,5 +50,5 @@ tornado==6.2
 traitlets==5.4.0
 wcwidth==0.2.5
 Werkzeug==2.1.1
-xgboost==1.6.1
+xgboost==1.6.2
 zipp==3.8.0

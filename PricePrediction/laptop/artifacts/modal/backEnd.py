@@ -1,10 +1,14 @@
 import joblib
 import numpy as np
 import pickle
+import xgboost as xgb
 
 # model = joblib.load('laptoppricemodel')
+model = xgb.Booster()
+model.load_model("./PricePrediction/laptop/artifacts/modal/laptop_cost_prediction_model.json")
 
-model = pickle.load(open("./PricePrediction/laptop/artifacts/modal/LaptopCost.pkl", "rb"))
+# model = pickle.load(open("./PricePrediction/laptop/artifacts/modal/LaptopCost.pkl", "rb"))
+#model = joblib.load("./PricePrediction/laptop/artifacts/modal/laptop_cost_prediction.sav")
 
 
 class backEnd:
